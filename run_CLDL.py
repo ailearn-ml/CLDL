@@ -45,7 +45,7 @@ if __name__ == '__main__':
     if not os.path.exists(os.path.join('save', 'result',
                                        f'{dataset}_{outDim}_{kernel_type}_{max_iter}_{lr}_Z_test.npy')):
         Z = loadmat(os.path.join('save', 'encoding', f'{dataset}_{outDim}.mat'))['encoding']
-        likelihood = gpytorch.likelihoods.MultitaskGaussianLikelihood(num_tasks=Z.shape[1]).cuda()
+        likelihood = gpytorch.likelihoods.MultitaskGaussianLikelihood(num_tasks=Z.shape[1]).to(device)
         model = CLDL(x_train=x_train, encoding_train=Z,
                      num_tasks=Z.shape[1], max_iter=max_iter,
                      lr=lr, kernel_type=kernel_type, device=device)
