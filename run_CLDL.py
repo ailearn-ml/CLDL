@@ -9,7 +9,7 @@ from utils import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='sample_data')
-parser.add_argument('--outDim', type=int, default=10)
+parser.add_argument('--outDim', type=int, default=30)
 parser.add_argument('--max_iter', type=int, default=10)
 parser.add_argument('--lr', type=float, default=0.05)
 parser.add_argument('--kernel_type', type=str, default='matern',
