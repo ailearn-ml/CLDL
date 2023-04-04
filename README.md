@@ -36,7 +36,7 @@ To preprocess the label vectors, please run "get_encoding.m" in Matlab.
 To train and test the CLDL model in the terminal, use:
 
 ```bash
-$ python run_CLDL.py --dataset sample_data --outDim 10 --max_iter 10 --lr 0.05 --kernel_type linear --device cuda:0 --neighbor_num 10
+$ python run_CLDL.py --dataset sample_data --outDim 30 --max_iter 10 --lr 0.05 --kernel_type matern --device cuda:0 --neighbor_num 30
 ```
 
 ## Acknowledgment
