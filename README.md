@@ -1,6 +1,6 @@
 # Code for CLDL
 
-Code for "Continuous Label Distribution Learning" in Pattern Recognition.
+Code for "Continuous Label Distribution Learning" in Pattern Recognition 2023.
 
 If you use the code in this repo for your work, please cite the following bib entries:
 
