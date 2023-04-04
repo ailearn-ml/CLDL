@@ -5,7 +5,7 @@ Code for "Continuous Label Distribution Learning" in Pattern Recognition 2023.
 If you use the code in this repo for your work, please cite the following bib entries:
 
 ```
-@article{DBLP:journals/pr/ZhaoAXG23,
+@article{Zhao2023CLDL,
   author    = {Xingyu Zhao and
                Yuexuan An and
                Ning Xu and
