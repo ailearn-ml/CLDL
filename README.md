@@ -2,24 +2,6 @@
 
 Code for "Continuous Label Distribution Learning" in Pattern Recognition 2023.
 
-If you use the code in this repo for your work, please cite the following bib entries:
-
-```
-@article{Zhao2023CLDL,
-  author    = {Xingyu Zhao and
-               Yuexuan An and
-               Ning Xu and
-               Xin Geng},
-  title     = {Continuous label distribution learning},
-  journal   = {Pattern Recognit.},
-  volume    = {133},
-  pages     = {109056},
-  year      = {2023},
-  url       = {https://doi.org/10.1016/j.patcog.2022.109056},
-  doi       = {10.1016/j.patcog.2022.109056},
-}
-```
-
 ## Requirements
 
 - Python == 3.6
@@ -36,7 +18,7 @@ To preprocess the label vectors, please run "get_encoding.m" in Matlab.
 To train and test the CLDL model in the terminal, use:
 
 ```bash
-$ python run_CLDL.py --dataset sample_data --outDim 30 --max_iter 10 --lr 0.05 --kernel_type matern --device cuda:0 --neighbor_num 30
+$ python run_CLDL.py --dataset sample_data --outDim 10 --max_iter 10 --lr 0.05 --kernel_type linear --device cuda:0 --neighbor_num 10
 ```
 
 ## Acknowledgment
